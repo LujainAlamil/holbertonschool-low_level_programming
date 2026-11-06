@@ -1,8 +1,9 @@
-# include <stdio.h>
+#include <stdio.h>
+
 /**
- * main - print message by printf
+ * main - prints a message using printf
  *
- * Return: Always zero 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
