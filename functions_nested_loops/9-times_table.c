@@ -7,30 +7,33 @@
  */
 void times_table(void)
 {
-	int row, col, result;
+	int row;
+	int col;
+	int result;
 
-	for (row = 0; row <= 9; row++)
+	row = 0;
+	while (row <= 9)
 	{
-		for (col = 0; col <= 9; col++)
+		col = 0;
+		while (col <= 9)
 		{
 			result = row * col;
 
 			if (col != 0)
+			{
+				_putchar(',');
 				_putchar(' ');
-
-			if (result < 10)
-				_putchar(' ');
+				if (result < 10)
+					_putchar(' ');
+			}
 
 			if (result >= 10)
 				_putchar((result / 10) + '0');
 
 			_putchar((result % 10) + '0');
-
-			if (col != 9)
-			{
-				_putchar(',');
-			}
+			col++;
 		}
 		_putchar('\n');
+		row++;
 	}
 }
