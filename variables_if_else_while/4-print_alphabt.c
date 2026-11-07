@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main: Prints letters except q and e
+ * main- Prints letters except q and e
  *
  * Return: Always 0 (Success)
  */
