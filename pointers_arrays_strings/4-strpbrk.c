@@ -4,24 +4,25 @@
 /**
  * _strpbrk - searches a string for any matching byte
  * @s: the string to search
- * @accept: the characters to find
+ * @accept: the bytes to find
  *
- * Return: pointer to the first matching character, or NULL
+ * Return: pointer to the first matching byte, or NULL
  */
 char *_strpbrk(char *s, char *accept)
 {
-    int i;
-    int j;
+	int i;
+	int j;
 
-    for (i = 0; s[i] != '\0'; i++)
-    {
-        for (j = 0; accept[j] != '\0'; j++)
-        {
-            if (s[i] == accept[j])
-                return (&s[i]);
-        }
-    }
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+				return (&s[i]);
+		}
+	}
 
-    return (NULL);
+	return (NULL);
 }
+
 
