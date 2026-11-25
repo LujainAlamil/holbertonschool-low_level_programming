@@ -6,7 +6,7 @@
  *
  * return: Nothing.
  */
-void print_name(char *name, void (*f)(char*))
+void print_name(char *name, void (*f)(char *))
 {
-	(*f)(name);
+	(*f)(name)i;
 }
